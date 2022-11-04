@@ -8,9 +8,21 @@ namespace Exercise2
 {
     internal class Program
     {
-        static void Main(string[] args)
+        int[] arr = new int[20];
+
+
+
+
+        //Number of elements in array
+        int n, i, j, val, flag;
+        void input()
         {
+
+
+
+
         }
+     
     }
 }
 
