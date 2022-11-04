@@ -86,7 +86,20 @@ namespace Exercise2
 
             }
         }
+        static public void SortMerge(int[] numbers, int left, int right)
+        {
+            int mid;
+            if (right > left)
+            {
+                mid = (right + left) / 2;
+                SortMerge(numbers, left, mid);
+                SortMerge(numbers, (mid + 1), right);
+                MainMerge(numbers, left, (mid + 1), right);
 
+
+
+            }
+        }
         
     }
 }
