@@ -95,8 +95,17 @@ namespace Exercise2
                 SortMerge(numbers, left, mid);
                 SortMerge(numbers, (mid + 1), right);
                 MainMerge(numbers, left, (mid + 1), right);
+            }
+        }
+        void display()
+        {
+            Console.WriteLine("\n-----------------------");
+            Console.WriteLine(" Sorted array elements ");
+            Console.WriteLine("-------------------------");
 
-
+            for (int j = 0; j < n; j++)
+            {
+                Console.WriteLine(prim[j]);
 
             }
         }
