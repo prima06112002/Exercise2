@@ -56,17 +56,33 @@ namespace Exercise2
                     }
                     else flag = 1;
                 }
-
-
-
-
-
-
-
-
-
             }
         }
+        static public void MainMerge(int[] numbers, int left, int mid, int right)
+        {
+            int[] temp = new int[25];
+            int i, eol, num, pos;
+            eol = (mid - 1);
+            pos = left;
+            num = (right - left + 1);
+
+            while ((left <= eol) && (mid <= right))
+            {
+                if (numbers[left] <= numbers[mid])
+                    temp[pos++] = numbers[left++];
+                else
+                    temp[pos++] = numbers[mid++];
+
+            }
+
+
+        }
+
+        
     }
 }
+        
+
+
+
 
