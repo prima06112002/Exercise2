@@ -103,11 +103,17 @@ namespace Exercise2
             Console.WriteLine(" Sorted array elements ");
             Console.WriteLine("-------------------------");
 
-            for (int j = 0; j < n; j++)
+            for (int pr = 0; pr < n; pr++)
             {
-                Console.WriteLine(prim[j]);
+                Console.WriteLine(prim[pr]);
 
             }
+        }
+
+
+        static void Main(string[] argas)
+        {
+
         }
         
     }
