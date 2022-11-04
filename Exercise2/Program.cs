@@ -8,13 +8,13 @@ namespace Exercise2
 {
     internal class Program
     {
-        int[] arr = new int[20];
+        int[] prim = new int[71];
 
 
 
 
         //Number of elements in array
-        int n, i, j, val, flag;
+        int n, i, pr, val, flag;
         void input()
         {
             while (true)
@@ -36,7 +36,7 @@ namespace Exercise2
             {
                 Console.Write("<" + (i + 1) + ">");
                 string s1 = Console.ReadLine();
-                arr[i] = Int32.Parse(s1);
+                prim[i] = Int32.Parse(s1);
 
             }
         }
@@ -44,15 +44,15 @@ namespace Exercise2
         {
             for (i = 1; i < n; i++)
             {
-                val = arr[i];
+                val = prim[i];
                 flag = 0;
-                for (j = i - 1; j >= 0 && flag != 1;)
+                for (pr = i - 1; pr >= 0 && flag != 1;)
                 {
-                    if (val < arr[j])
+                    if (val < prim[pr])
                     {
-                        arr[j + 1] = arr[j];
-                        j--;
-                        arr[j + 1] = val;
+                        prim[pr + 1] = prim[pr];
+                        pr--;
+                        prim[pr + 1] = val;
                     }
                     else flag = 1;
                 }
